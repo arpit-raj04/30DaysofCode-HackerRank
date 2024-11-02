@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+#include <string.h>
+
+using namespace std;
+
+
+
+int main()
+{
+    string S;
+    getline(cin, S);
+    try{
+        int c = stoi(S);
+    cout<<c;}catch(const invalid_argument& e){
+        cout<<"Bad String";
+    }catch (const out_of_range& e) { 
+        cout << "Bad String"; 
+    }
+    return 0;
+}
