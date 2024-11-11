@@ -1,0 +1,23 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    N = int(input().strip())
+    entries = []
+    for N_itr in range(N):
+        first_multiple_input = input().rstrip().split()
+        entries.append(first_multiple_input)
+    entries.sort()
+    for entry in entries:
+        firstName=entry[0]
+        emailID=entry[1]
+        if(emailID.endswith("@gmail.com")):
+            print(firstName)
+
